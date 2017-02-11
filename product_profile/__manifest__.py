@@ -4,7 +4,7 @@
 
 {
     'name': 'Product Profile',
-    'version': '10.0.0.1.0',
+    'version': '10.0.1.0.0',
     'author': 'Akretion, Odoo Community Association (OCA)',
     'summary': "Allow to configure a product in 1 click",
     'category': 'product',
@@ -14,8 +14,8 @@
     'website': 'http://www.akretion.com/',
     'data': [
         'security/group.xml',
-        'product_view.xml',
-        'config_view.xml',
+        'views/product_view.xml',
+        'views/config_view.xml',
         'security/ir.model.access.csv',
     ],
     'demo': [
