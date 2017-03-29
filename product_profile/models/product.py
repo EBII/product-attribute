@@ -81,6 +81,8 @@ class ProductProfile(models.Model):
                     [('profile_id', '=', rec.id)])
                 data = products._get_profile_data({'profile_id': rec.id})
                 products.write(data)
+        return res
+
 
     @api.model
     def check_useless_key_in_vals(self, vals, key):
