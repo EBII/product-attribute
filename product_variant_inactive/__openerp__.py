@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-=======
-# -*- coding: utf-8 -*-
 ##############################################################################
 #
 #    Copyright (C) All Rights Reserved 2015 Akretion
@@ -21,5 +18,17 @@
 #
 ###############################################################################
 
->>>>>>> Product Variant Inactive
-from . import product_variant
+{
+    'name': "Product Variant",
+    'author': "Akretion,Odoo Community Association (OCA)",
+    'website': "http://www.Akretion.com",
+    'license': 'AGPL-3',
+    'category': 'Product',
+    'version': '0.1',
+    'depends': ['product'],
+    'data': [
+        'product_variant_view.xml'
+    ],
+    'demo': [
+        ],
+}
