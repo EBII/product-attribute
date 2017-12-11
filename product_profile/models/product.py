@@ -83,7 +83,6 @@ class ProductProfile(models.Model):
                 products.write(data)
         return res
 
-
     @api.model
     def check_useless_key_in_vals(self, vals, key):
         """ If replacing values are the same than in db, we remove them.
@@ -244,11 +243,9 @@ class ProductTemplate(models.Model):
     _name = 'product.template'
 
     profile_id = fields.Many2one(
-        'product.profile',
-        string='Profile')
+        'product.profile')
     profile_explanation = fields.Text(
         related='profile_id.explanation',
-        string='Profile Explanation',
         readonly=True)
 
     @api.model
